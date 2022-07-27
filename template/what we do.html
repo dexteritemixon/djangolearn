@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>What We Do</h1>
+
+<p>
+{{ my_location }}, {{ my_list }}
+</p>
+
+<ul>
+{% for n in my_list %}
+    {% if n == 111 %}
+    <li>{{ forloop.counter }}-{{ n|add:11 }}</li>
+    {% elif n == 'A' %}
+    <li>{{ forloop.counter }}-{{ n|add:'B' }}</li>
+    {% else %}
+    <li>{{ forloop.counter }}</li>
+    {% endif %}
+{% endfor %}
+</ul>
+{% endblock content %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>foundation list</h1>
+<h2 class="title">{{ object.Foundation_Name }}</h2>
+<p>Focus area: {% if object.Focus_area != None and object.Focus_area != '' %}{{ object.Focus_area }}{% else %}<span style="color: red;"> Not availlable</span>{% endif %}</p>
+<p>Adress: {% if object.Address != None and object.Address != '' %} {{ object.Address }}{% else %}<span style="color: red;"> Not availlable</span>{% endif %}</p>
+<p>Email: {% if object.Email != None and object.Email != '' %}{{ object.Email }}{% else %}<span style="color: red;"> Not availlable</span>{% endif %}</p>
+<p>Phone: {% if object.Phone != None and object.Phone != '' %} {{ object.Phone }}{% else %}<span style="color: red;"> Not availlable</span>{% endif %}</p>
+<p>Website:{% if object.Website != None and object.Website != '' %}  {{ object.Website }}{% else %}<span style="color: red;"> Not availlable</span>{% endif %}</p>
+{% endblock %}
