@@ -9,4 +9,3 @@ class Foundation(models.Model):
     Phone           = models.CharField(max_length=20)
     Website         = models.URLField(blank=True,null=True)
 
-

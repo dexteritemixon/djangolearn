@@ -31,6 +31,4 @@ class RawFoundationForm(forms.Form):
                                            )
     Address              = forms.CharField()
     Email                = forms.EmailField()
-
-
         
